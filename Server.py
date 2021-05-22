@@ -1,9 +1,8 @@
 from flask import Flask
-import Scraper
+from flask import render_template
 app=Flask(__name__)
 print(__name__)
 
 @app.route('/')
 def hello_world():
-    content=str(Scraper.create_custom_hn())
-    return content
+    return render_template('index.html')
