@@ -9,9 +9,9 @@ Getting Started
 Create a project folder and a venv folder within:
 
 Windows:
-> mkdir myproject
-> cd myproject
-> py -3 -m venv venv
+mkdir myproject
+cd myproject
+py -3 -m venv venv
 
 macOS/Linux:
 $ mkdir myproject
@@ -23,7 +23,7 @@ $ python3 -m venv venv
 Before you work on your project, activate the corresponding environment:
 
 Windows:
-> venv\Scripts\activate
+venv\Scripts\activate
 
 macOS/Linux:
 $ . venv/bin/activate
@@ -44,12 +44,12 @@ $ pip install beautifulsoup4
 2.Deploy website locally
 
 Powershell:
-> $env:FLASK_APP = "server.py"
-> flask run
+$env:FLASK_APP = "server.py"
+flask run
 
 CMD:
-> set FLASK_APP=server
-> flask run
+set FLASK_APP=server
+flask run
 
 Bash:
 $ export FLASK_APP=server
