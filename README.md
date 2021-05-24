@@ -56,4 +56,7 @@ $ flask run
 
 website is Running on http://127.0.0.1:5000/
 
+3.Deploy website in heroku
+https://dev.to/techparida/how-to-deploy-a-flask-app-on-heroku-heb
+
 
