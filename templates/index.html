@@ -3,7 +3,7 @@
 <head>
     <style>
         body {
-            background-color: azure;
+            background-color: aliceblue;
         }
 
         t1 {
@@ -13,20 +13,46 @@
         }
 
         hr {
-            color: darkcyan;
+            color: lightblue;
             width: 80%;
-            border: 2px solid darkcyan;
+            border: 2px solid lightblue;
         }
 
         ol {
-            text-align: center;
+            text-align: left;
+            list-style: none;
+            counter-reset: item;
         }
+        
+        li {
+           counter-increment: item;
+           margin-bottom: 5px;
+         }
+        
+        li:before {
+               margin-right: 10px;
+               content: counter(item);
+               background: lightblue;
+               border-radius: 100%;
+               color: white;
+               width: 1.2em;
+               text-align: center;
+               display: inline-block;
+             }
 
         a {
             color: darkcyan;
             font-family: sans-serif;
-            font-size: 20pt;
+            font-size: 15pt;
             text-decoration: none;
+        }
+        
+        .list{
+            max-width: 80%;
+            margin-left: 10%;
+            background-color: azure;
+            padding: 5pt;  
+            border-radius: 10pt;
         }
     </style>
 </head>
@@ -43,18 +69,34 @@
     <br>
     <br>
     <br>
-    <ol>
-        <li><a href="{{news[0]['link']}}">{{news[0]['title']}}</a></li>
-        <li><a href="{{news[1]['link']}}">{{news[1]['title']}}</a></li>
-        <li><a href="{{news[2]['link']}}">{{news[2]['title']}}</a></li>
-        <li><a href="{{news[3]['link']}}">{{news[3]['title']}}</a></li>
-        <li><a href="{{news[4]['link']}}">{{news[4]['title']}}</a></li>
-        <li><a href="{{news[5]['link']}}">{{news[5]['title']}}</a></li>
-        <li><a href="{{news[6]['link']}}">{{news[6]['title']}}</a></li>
-        <li><a href="{{news[7]['link']}}">{{news[7]['title']}}</a></li>
-        <li><a href="{{news[8]['link']}}">{{news[8]['title']}}</a></li>
-        <li><a href="{{news[9]['link']}}">{{news[9]['title']}}</a></li>
-    </ol>
+    <div class="list">
+        <ol>
+            <li><a href="{{news[0]['link']}}">{{news[0]['title']}}</a></li>
+            <li><a href="{{news[1]['link']}}">{{news[1]['title']}}</a></li>
+            <li><a href="{{news[2]['link']}}">{{news[2]['title']}}</a></li>
+            <li><a href="{{news[3]['link']}}">{{news[3]['title']}}</a></li>
+            <li><a href="{{news[4]['link']}}">{{news[4]['title']}}</a></li>
+            <li><a href="{{news[5]['link']}}">{{news[5]['title']}}</a></li>
+            <li><a href="{{news[6]['link']}}">{{news[6]['title']}}</a></li>
+            <li><a href="{{news[7]['link']}}">{{news[7]['title']}}</a></li>
+            <li><a href="{{news[8]['link']}}">{{news[8]['title']}}</a></li>
+            <li><a href="{{news[9]['link']}}">{{news[9]['title']}}</a></li>
+            <li><a href="{{news[10]['link']}}">{{news[10]['title']}}</a></li>
+            <li><a href="{{news[11]['link']}}">{{news[11]['title']}}</a></li>
+            <li><a href="{{news[12]['link']}}">{{news[12]['title']}}</a></li>
+            <li><a href="{{news[13]['link']}}">{{news[13]['title']}}</a></li>
+            <li><a href="{{news[14]['link']}}">{{news[14]['title']}}</a></li>
+            <li><a href="{{news[15]['link']}}">{{news[15]['title']}}</a></li>
+            <li><a href="{{news[16]['link']}}">{{news[16]['title']}}</a></li>
+            <li><a href="{{news[17]['link']}}">{{news[17]['title']}}</a></li>
+            <li><a href="{{news[18]['link']}}">{{news[18]['title']}}</a></li>
+            <li><a href="{{news[19]['link']}}">{{news[19]['title']}}</a></li>
+            <li><a href="{{news[20]['link']}}">{{news[20]['title']}}</a></li>
+            <li><a href="{{news[21]['link']}}">{{news[21]['title']}}</a></li>
+            <li><a href="{{news[22]['link']}}">{{news[22]['title']}}</a></li>
+            <li><a href="{{news[23]['link']}}">{{news[23]['title']}}</a></li>
+        </ol>
+    </div>
 
 </body>
 
