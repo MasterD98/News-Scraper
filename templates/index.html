@@ -1,13 +1,55 @@
-<!DOCTYPE html>
 <html>
-<head>
-  <title>News Scraper</title>
-  <link rel="stylesheet" type="text/css" href="static/style.css">
-  <link rel="shortcut icon" href="{{url_for('static',filename='news.ico')}}"
-</head>
-<body>
-  Under Developments
-  <script src="static/script.js"></script>
-</body>
-</html>
 
+<head>
+    <style>
+        body {
+            background-color: azure;
+        }
+
+        t1 {
+            color: darkslategray;
+            font-family: sans-serif;
+            font-size: 50pt;
+        }
+
+        hr {
+            color: darkcyan;
+            width: 80%;
+            border: 2px solid darkcyan;
+        }
+
+        ol {
+            margin-left: 40%;
+        }
+
+        a {
+            color: darkcyan;
+            font-family: sans-serif;
+            font-size: 20pt;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <center>
+        <t1>NEWS</t1>
+    </center>
+    <hr>
+    <br>
+    <br>
+    <br>
+    <ol>
+        {{a=0}}
+        <li><a href="{{news[0]['link']}}">{{news[0]['title']}}</a></li>
+        <li><a href="">bbbbb</a></li>
+        <li><a href="">cccc</a></li>
+    </ol>
+
+</body>
+
+</html>
